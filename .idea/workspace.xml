@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="75dd9748-1646-4caa-949c-0e05883fe0ba" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../meuPrimeiroCrud/src/main/java/com/crud/meuPrimeiroCrud/controllers/LivroController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../meuPrimeiroCrud/src/main/java/com/crud/meuPrimeiroCrud/model/LivroModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../meuPrimeiroCrud/src/main/java/com/crud/meuPrimeiroCrud/repository/LivroRespository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../meuPrimeiroCrud/src/main/java/com/crud/meuPrimeiroCrud/service/LivroService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/personagem/entities/ItemMagico.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/personagem/entities/Personagem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/personagem/repositories/ItemMagicoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/personagem/repositories/PersonagemRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/personagem/services/PersongemService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../produto/src/main/java/com/gerenciamento/produto/controller/ProdutoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../produto/src/main/java/com/gerenciamento/produto/entities/Produto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../produto/src/main/java/com/gerenciamento/produto/repository/ProdutoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../produto/src/main/java/com/gerenciamento/produto/services/ProdutoService.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2vT9OMhJhrIQVYgdnfv1hxFGPC1" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.PersonagemApplication.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/camil/OneDrive/Área de Trabalho/personagem",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="PersonagemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="personagem" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.personagem.PersonagemApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18968.26" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18968.26" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="75dd9748-1646-4caa-949c-0e05883fe0ba" name="Changes" comment="" />
+      <created>1744158163353</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1744158163353</updated>
+      <workItem from="1744158164441" duration="2526000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
