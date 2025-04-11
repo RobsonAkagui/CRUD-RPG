@@ -5,16 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75dd9748-1646-4caa-949c-0e05883fe0ba" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../avaliacao/src/main/java/com/example/avaliacao/produto/ProdutoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../avaliacao/src/main/java/com/example/avaliacao/produto/ProdutoModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../avaliacao/src/main/java/com/example/avaliacao/produto/ProdutoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../avaliacao/src/main/java/com/example/avaliacao/produto/ProdutoService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../meuPrimeiroCrud/src/main/java/com/crud/meuPrimeiroCrud/controllers/LivroController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../meuPrimeiroCrud/src/main/java/com/crud/meuPrimeiroCrud/model/LivroModel.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../meuPrimeiroCrud/src/main/java/com/crud/meuPrimeiroCrud/repository/LivroRespository.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../meuPrimeiroCrud/src/main/java/com/crud/meuPrimeiroCrud/service/LivroService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/personagem/enums/TipoClasses.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/personagem/enums/TipoItens.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/personagem/services/ItemService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../produto/src/main/java/com/gerenciamento/produto/controller/ProdutoController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../produto/src/main/java/com/gerenciamento/produto/entities/Produto.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../produto/src/main/java/com/gerenciamento/produto/repository/ProdutoRepository.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../produto/src/main/java/com/gerenciamento/produto/services/ProdutoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/personagem/entities/ItemMagico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/personagem/entities/ItemMagico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/personagem/entities/Personagem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/personagem/entities/Personagem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/personagem/services/PersongemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/personagem/services/PersongemService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,9 +48,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2vT9OMhJhrIQVYgdnfv1hxFGPC1" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -50,21 +58,25 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.PersonagemApplication.executor": "Run",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/camil/OneDrive/Área de Trabalho/personagem",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.PersonagemApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/camil/OneDrive/Área de Trabalho/personagem&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="PersonagemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
@@ -91,7 +103,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1744158163353</updated>
-      <workItem from="1744158164441" duration="3944000" />
+      <workItem from="1744158164441" duration="9718000" />
+      <workItem from="1744394886747" duration="11592000" />
     </task>
     <servers />
   </component>

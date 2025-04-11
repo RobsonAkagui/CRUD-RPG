@@ -1,6 +1,10 @@
 package com.example.personagem.entities;
 
+import com.example.personagem.enums.TipoClasses;
 import jakarta.persistence.*;
+
+        import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "personages")
@@ -10,26 +14,28 @@ public class Personagem {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nome;
-    private String nomeChar;
-    private String classe;
+    private String nomePersonagem;
+    private TipoClasses classe;
     private int level;
     private int forca;
     private int defesa;
-    private char itemMagico;
+
+    @OneToMany(mappedBy = "personagem", cascade = CascadeType.ALL)
+    private List<ItemMagico> itensMagicos = new ArrayList<>();
+
+
 
     public Personagem() {
-
     }
 
-    public Personagem(Long id, String nome, String nomeChar, String classe, int level, int forca, int defesa, char itemMagico) {
+    public Personagem(Long id, String nome, String nomePersonagem, TipoClasses classe, int level, int forca, int defesa) {
         this.id = id;
         this.nome = nome;
-        this.nomeChar = nomeChar;
+        this.nomePersonagem = nomePersonagem;
         this.classe = classe;
         this.level = level;
         this.forca = forca;
         this.defesa = defesa;
-        this.itemMagico = itemMagico;
     }
 
     public Long getId() {
@@ -48,19 +54,19 @@ public class Personagem {
         this.nome = nome;
     }
 
-    public String getNomeChar() {
-        return nomeChar;
+    public String getNomePersonagem() {
+        return nomePersonagem;
     }
 
-    public void setNomeChar(String nomeChar) {
-        this.nomeChar = nomeChar;
+    public void setNomePersonagem(String nomePersonagem) {
+        this.nomePersonagem = nomePersonagem;
     }
 
-    public String getClasse() {
+    public TipoClasses getClasse() {
         return classe;
     }
 
-    public void setClasse(String classe) {
+    public void setClasse(TipoClasses classe) {
         this.classe = classe;
     }
 
@@ -88,11 +94,27 @@ public class Personagem {
         this.defesa = defesa;
     }
 
-    public char getItemMagico() {
-        return itemMagico;
+    public List<ItemMagico> getItensMagicos() {
+        return itensMagicos;
     }
 
-    public void setItemMagico(char itemMagico) {
-        this.itemMagico = itemMagico;
+    public void setItensMagicos(List<ItemMagico> itensMagicos) {
+        this.itensMagicos = itensMagicos;
+    }
+
+    @Override
+    public String toString() {
+        return "Personagem{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", nomePersonagem='" + nomePersonagem + '\'' +
+                ", classe='" + classe + '\'' +
+                ", level=" + level +
+                ", forcaTotal=" + getForca() +
+                ", defesaTotal=" + getDefesa() +
+                '}';
     }
 }
+
+
+

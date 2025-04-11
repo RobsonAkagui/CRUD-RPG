@@ -1,6 +1,7 @@
 package com.example.personagem.entities;
 
 
+import com.example.personagem.enums.TipoItens;
 import jakarta.persistence.*;
 
 @Entity
@@ -12,18 +13,21 @@ public class ItemMagico {
 
     private Long id;
     private String nomeItem;
-    private String tipoItem;
+    private TipoItens tipo;
     private String forcaItem;
     private String defesaItem;
+
+    @ManyToOne
+    @JoinColumn(name = "personagem_id")
+    private Personagem personagem;
 
     public ItemMagico() {
 
     }
 
-    public ItemMagico(Long id, String nomeItem, String tipoItem, String forcaItem, String defesaItem) {
-        this.id = id;
+    public ItemMagico(String nomeItem, TipoItens tipo, String forcaItem, String defesaItem) {
         this.nomeItem = nomeItem;
-        this.tipoItem = tipoItem;
+        this.tipo = tipo;
         this.forcaItem = forcaItem;
         this.defesaItem = defesaItem;
     }
@@ -44,12 +48,12 @@ public class ItemMagico {
         this.nomeItem = nomeItem;
     }
 
-    public String getTipoItem() {
-        return tipoItem;
+    public TipoItens getTipo() {
+        return tipo;
     }
 
-    public void setTipoItem(String tipoItem) {
-        this.tipoItem = tipoItem;
+    public void setTipo(TipoItens tipo) {
+        this.tipo = tipo;
     }
 
     public String getForcaItem() {
