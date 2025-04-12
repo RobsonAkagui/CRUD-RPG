@@ -14,8 +14,8 @@ public class ItemMagico {
     private Long id;
     private String nomeItem;
     private TipoItens tipo;
-    private String forcaItem;
-    private String defesaItem;
+    private int forcaItem;
+    private int defesaItem;
 
     @ManyToOne
     @JoinColumn(name = "personagem_id")
@@ -25,7 +25,8 @@ public class ItemMagico {
 
     }
 
-    public ItemMagico(String nomeItem, TipoItens tipo, String forcaItem, String defesaItem) {
+    public ItemMagico(Long id, String nomeItem, TipoItens tipo, int forcaItem, int defesaItem) {
+        this.id = id;
         this.nomeItem = nomeItem;
         this.tipo = tipo;
         this.forcaItem = forcaItem;
@@ -56,19 +57,19 @@ public class ItemMagico {
         this.tipo = tipo;
     }
 
-    public String getForcaItem() {
+    public int getForcaItem() {
         return forcaItem;
     }
 
-    public void setForcaItem(String forcaItem) {
+    public void setForcaItem(int forcaItem) {
         this.forcaItem = forcaItem;
     }
 
-    public String getDefesaItem() {
+    public int getDefesaItem() {
         return defesaItem;
     }
 
-    public void setDefesaItem(String defesaItem) {
+    public void setDefesaItem(int defesaItem) {
         this.defesaItem = defesaItem;
     }
 }

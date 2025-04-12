@@ -2,6 +2,7 @@ package com.example.personagem.services;
 
 
 import com.example.personagem.entities.ItemMagico;
+import com.example.personagem.enums.TipoItens;
 import com.example.personagem.repositories.ItemMagicoRepository;
 import com.example.personagem.repositories.PersonagemRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,6 +14,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import java.util.List;
 import java.util.Optional;
 
+import static com.example.personagem.enums.TipoItens.Arma;
+
 @Service
 
 public class ItemService {
@@ -20,12 +23,27 @@ public class ItemService {
     @Autowired
     private ItemMagicoRepository itemMagicoRepository;
 
-    @Autowired
-    private PersonagemRepository personagemRepository;
 
-    public ItemMagico createItemMagico(ItemMagico item){
-
-
+    public ItemMagico createItemMagico(ItemMagico itemMagico){
+    switch (itemMagico.getTipo()){
+        case Arma:
+            itemMagico.setDefesaItem(0);
+            break;
+        case Armadura:
+            itemMagico.setDefesaItem(0);
+            break;
+        case Amuleto:
+            if(itemMagico.getDefesaItem() == 0 && itemMagico.getForcaItem() == 0){
+                throw new RuntimeException( "O item não pode ter o valor 0 em ataque e defesa");
+            }
+        }
+        return itemMagicoRepository.save(itemMagico);
+    }
+    public List<ItemMagico> getAllItemMagico(){
+        return itemMagicoRepository.findAll();
+    }
+    public ItemMagico getItemMagicoById(long id){
+        return itemMagicoRepository.findById(id).orElseThrow(() -> new RuntimeException("Item não encontrado"));
     }
 }
 /*
